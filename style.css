@@ -1,0 +1,24 @@
+img {
+    width: auto;
+    height: auto;
+    max-height: 400px;
+    max-width: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+img:hover {
+    filter: none;
+}
+
+img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+
+body {
+    background-color: slategrey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     text-align: center;
+}
