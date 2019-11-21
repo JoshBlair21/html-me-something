@@ -1,24 +1,46 @@
-img {
-    width: auto;
-    height: auto;
-    max-height: 400px;
-    max-width: 400px;
+.anime {
+    height: 100%;
+    width: 100%;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
-
 img:hover {
     filter: none;
 }
-
-img-hover-zoom img {
-    transition: transform .5s ease;
+.row {
+    display: flex;
+    max-width: 100%;
 }
-
-
+.zoom {
+    flex: 25%;
+    transition: transform .2s;
+    padding:3px;
+    z-index: 9;
+}
+.zoom:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
 body {
-    background-color: slategrey;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      text-align: center;
+     background-color: slategrey
+}
+
+#color {
+    background-color: slategrey;
+}
+
+
+p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+p.center{
+    text-align: center;
+    font-size: smaller;
 }
